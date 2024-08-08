@@ -1,0 +1,9 @@
+<!-- views/movies.ejs -->
+<%- include('partials/header') %>
+    <h2>Movie List</h2>
+    <ul>
+        <% movies.forEach(movie => { %>
+            <li><%= movie.title %> (<%= movie.year %>) - Directed by <%= movie.director %></li>
+        <% }) %>
+    </ul>
+<%- include('partials/footer') %>
